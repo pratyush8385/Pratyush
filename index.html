@@ -148,6 +148,7 @@
                                             <li><a href="https://www.linkedin.com/in/pratyush-sahoo002/" target="_blank" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
                                             <li><a href="https://github.com/pratyush8385/" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
                                             <li><a href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href="https://wa.me/917008512081" target="_blank" title="WhatsApp"> <i class="fa-brands fa-whatsapp"></i></a></li>
                                         </ul>
                                     </div>
 
@@ -542,16 +543,16 @@
                 <div class="col-md-6">
                     <ul class="resumes">
                         <li class="resume-item expr">
-                            <h3>Full-Stack Developer</h3>
-                            <h4>Company Four</h4>
-                            <h5>2018 - Present</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis dicta ipsum magni maxime, mollitia quae quaerat veritatis voluptate voluptatem! Accusantium dicta illum impedit quam.</p>
+                            <h3>Backend Developer</h3>
+                            <h4>NTT DATA</h4>
+                            <h5>2022 - 2022</h5>
+                            <p> I work on the BMW project, focusing on incident management, API debugging, and system monitoring using tools like Datadog and Kafka. I have hands-on experience in handling L1 & L2 support, ServiceNow operations, and troubleshooting API errors (400/500 issues). Additionally, I work with REST APIs, microservices architecture, and database operations.</p>
                         </li>
                         <li class="resume-item expr">
                             <h3>Back-End Developer</h3>
-                            <h4>Company Three</h4>
-                            <h5>2016 - 2017</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis dicta ipsum magni maxime, mollitia quae quaerat veritatis voluptate voluptatem! Accusantium dicta illum impedit quam.</p>
+                            <h4>NTT DATA</h4>
+                            <h5>2022 - Present</h5>
+                            <p> I work on the BMW project, focusing on incident management, API debugging, and system monitoring using tools like Datadog and Kafka. I have hands-on experience in handling L1 & L2 support, ServiceNow operations, and troubleshooting API errors (400/500 issues). Additionally, I work with REST APIs, microservices architecture, and database operations.</p>
                         </li>
 
                     </ul>
@@ -559,7 +560,7 @@
 
                 <div class="col-md-6">
                     <ul class="resumes">
-                        <li class="resume-item expr">
+                        <!-- <li class="resume-item expr">
                             <h3>Graphics Designer</h3>
                             <h4>Company Two</h4>
                             <h5>2016 - 2017</h5>
@@ -570,7 +571,7 @@
                             <h4>Company One</h4>
                             <h5>2015 - 2016</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis dicta ipsum magni maxime, mollitia quae quaerat veritatis voluptate voluptatem! Accusantium dicta illum impedit quam.</p>
-                        </li>
+                        </li> -->
 
                     </ul>
                 </div>
@@ -706,42 +707,35 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 box-contact-form">
 
-                    <form id="contact-form" method="post" action="contact.php" novalidate="true">
-
+                    <form id="contact-form" novalidate="true">
                         <div class="messages"></div>
-                        <!--you can change the message in contact.php file -->
-
+                    
                         <div class="controls">
-
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your full name *" required="required" data-error="Fullname is required.">
-                                        <div class="help-block with-errors"></div>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your full name *" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
-                                        <div class="help-block with-errors"></div>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email *" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Your Message *" rows="4" required="required" data-error="Leave a message for me"></textarea>
-                                        <div class="help-block with-errors"></div>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Your Message *" rows="4" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <button class="btn btn-send" value="">Send message</button>
+                                    <button type="button" class="btn btn-send" id="whatsapp-button">Send message via WhatsApp</button>
                                 </div>
                             </div>
                         </div>
-
                     </form>
-
+                    
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1">
@@ -830,6 +824,9 @@
 
     <!--Main js-->
     <script src="js/main.js"></script>
+
+    <!--Whatsapp js-->
+    <script src="js/whatsapp.js"></script>
 
 </body>
 
